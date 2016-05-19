@@ -1,0 +1,1493 @@
+/* PRODUKSJON*/
+/* I denne CSS'en ligger formateringsinnstillinger for Handelshøyskolen BI sin Primo-installasjon. */
+/* Utarbeidet av: Ole Andreas Solberg, ole.a.solberg@bi.no */
+/* Startdato: 2013-05-29. */
+/* Sist oppdatert: 2015-01-19*/
+
+
+body {
+	/* color: #454545; */
+	background-color: white;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	/* font-size: 13px; */
+  /* skalar */
+  background-color: #F1F0ED;
+  min-width: 1px;
+  }
+   
+
+/* skalar */
+a:link, a:visited {
+  /* color: #146BAD; */
+}
+/* skalar */   
+a:hover, a:active, a:focus {
+  color: #8A2333;
+}
+        
+/* FONTER, BAKGRUNN, OVERORDNET FORMATERING
+
+/* HEADER */
+#exlidHeaderTile{width:100%; background-color: #D4E6F4; padding-left: 0em; padding-top: 0em; padding-bottom: 0em;}
+.EXLSearchWrapper{clear:both;}
+#exlidMainMenuTile {clear:none; z-index:20;margin-top:0px;}
+#exlidUserAreaTile {position:absolute;right:0px;top:0px;zindex:20;}
+	
+/* Fjerner oransje farge i diverse overskrifter på hjemmesiden */
+#exlidHomeContainer h1{ font-size:100%; color:#00467F;}
+#exlidHomeContainer h2{ font-size:100%;color:#00467F;}
+#exlidHomeContainer h3{ font-size:100%;color:#00467F;}
+#exlidHomeContainer h4{ font-size:100%;color:#00467F;}
+
+
+/* Slette? 11.05.16 FHJ */
+/*#exlidHomeContainer div.EXLContentBlock3 div.EXLHomeBannerContainer1 {
+    background-image: url("https://www.bibsys.no/files/out/discovery/Primo_UI_files/BI/images/banner_home_chat.png");
+    display:none;
+    } */
+
+
+/* Slette? 11.05.16 FHJ */
+/* Fjerne chatboks fra venstre forside */
+/*#exlidHomeContainer div.EXLContentBlock3 div.EXLHomeBannerContainer2 {
+    background-image: url("https://www.bibsys.no/files/out/discovery/Primo_UI_files/BI/images/bg_strip_home_banners5.png");
+    display:none;
+    }*/
+
+
+/* Slette? 11.05.16 FHJ */
+/* Fjerne boks venstre side */
+/*#exlidHomeContainer div.EXLContentBlock4 div.EXLHomeBannerContainer1 {
+    background-image: url("https://www.bibsys.no/files/out/discovery/Primo_UI_files/BI/images/banner_home_twitter.png");    
+    }*/
+
+/* Slette? 11.05.16 FHJ */
+/*#exlidHomeContainer div.EXLContentBlock4 div.EXLHomeBannerContainer2 {
+    background-image: url("https://www.bibsys.no/files/out/discovery/Primo_UI_files/BI/images/bg_strip_home_banners5.png");
+    }*/   
+
+
+/* HOVEDMENY */
+
+/* HOVEDMENY - Diverse innstillinger */
+
+/* Plassering hovedmeny venstre og endring av bakgrunnsfarge */
+#exlidMainMenuTile {
+	float: left;
+	background-color: #f3f3f3;
+}
+
+/* Bakgrunnsfarge Header (dvs meny høyre side) */
+#exlidHeaderContainer {
+	background-color: #f3f3f3;
+}
+
+/* Hovedmeny - Bredde */
+/* #exlidMainMenuRibbon {
+	width: 650px;
+} */
+
+/* Hovedmeny - skillelinjene */
+
+#exlidMainMenuRibbon li span {
+	color: #555555;
+	border-right: 0;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+/* Farge punkter i hovedmeny */
+/*#exlidMainMenuRibbon li a {
+	color: #003366;
+	font-weight: bold;
+} */
+
+/* Hovedmeny */ 
+#exlidMainMenuRibbon li a {
+	color: #003366;
+	/* background-color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+	padding-left: 0em;
+	padding-right: 0.2em;
+	border-top: 1px solid #003366;
+	border-bottom: 1px solid #003366;
+	border-right: 1px solid #003366;
+	border-left: 1px solid #003366;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 4px; */
+}
+
+/* Hjelp i hovedmenyen */
+#exlidMainMenuRibbon li:last-child { display: inline; }
+
+/* Faner i søkeboks - */
+#exlidSearchTabs li.EXLSearchTabSelected {
+	font-weight: bold;
+	color: #FFFFFF;
+	border: 1px solid #8fb9d0;
+	border-bottom: 1px solid #f6f6f6;
+	background-color: #003366;
+	height: 15px;
+	background-image: url(../images/bg_strip_search_tabs.png);
+	background-repeat: repeat-x;
+	text-align: center;
+	font-weight: bold;
+	vertical-align: middle;
+	padding-left: 0.8em;
+	padding-right: 0.8em;
+	margin-right: 4px;
+	background-color: #f6f6f6;
+	border-top-right-radius: 5px;
+}
+
+/* Bakgrunnsfarge - Språkmeny */
+#exlidMainMenuTile div.EXLLanguagesContainer {
+	font-weight: bold;
+}
+
+/* Bakgrunnsfarge - Språkmeny flagg */
+#exlidMainMenuTile div.EXLLanguagesContainer ul.EXLLanguageMenuShow li.EXLLanguageLink {
+	background-color: none;
+}
+
+/* Bakgrunnsfarge søkeknapp */
+#exlidSearchRibbon input.submit {
+	background-color: #0075B0;
+	background-image: none;
+	background-repeat: repeat-x;
+	margin: 0em;
+	width: 100%;
+	color: #FFFFFF;
+	font-weight: normal;
+	height: 26px;
+	cursor: pointer;
+	padding-bottom: 0.3em;
+	padding-right: 0.6em;
+	padding-left: 0.6em;
+}
+
+/* Fjerne fane "Alle bibliotek" */
+/* a.EXLSearchTabTitle.EXLSearchTabLABELAlle.bibliotek {
+	display: none;
+} */
+
+/* Fjerne fane "All libraries" */
+/* a.EXLSearchTabTitle.EXLSearchTabLABELAll.libraries {
+	display: none; */
+}
+
+/* Fjerne Nynorsk og Samisk fra språkvalg */
+
+a.EXLLanguageOptionLANGnn_NO {
+    display: none;
+}
+
+a.EXLLanguageOptionLANGse_NO {
+    display: none;
+}
+
+h
+
+/* Endrer skriftstørrelsen på "Avansert søk" ved siden av søkeboksen */
+.EXLSearchFieldRibbonAdvancedSearchLink a.EXLSearchFieldRibbonAdvancedTwoLinks {
+	font-size: 110%;
+}
+
+
+/* Endrer størrelsen på søkeboksen */
+/*  div.EXLSearchFieldRibbonFormFields {
+	height: 35px;
+	width: 420px;
+}
+
+div.EXLSearchFieldRibbonFormSearchFor {
+	height: 35px;
+	width: 420px;
+}
+
+#exlidSearchRibbon div.EXLSearchFieldRibbon {
+	height: 35px;
+	width: 420px;
+}
+*/
+
+
+/* FASETTER */
+
+
+/* Bakgrunnsfarge fasettmeny */
+.EXLFacetContainer {
+    background-color: #FFFFFF;
+}
+
+/* Fasetter - Overskrifter første nivå */
+
+.EXLFacetContainer h1 {
+	color: #003366;
+	font-size: 1em;
+	border-top: 1px solid #6D6D6D;
+	border-bottom: 1px solid #6D6D6D;
+	margin-bottom: 1.4em;
+	background-color: #F5F5F5;
+}
+
+/* Fasetter - Overskrift første nivå - Vis mer + Vis kun */
+.EXLFacetContainer h3 {
+    color: #003366;
+    font-size: 1em;
+    border-top: 1px solid #6D6D6D;
+    border-bottom: 1px solid #6D6D6D;
+    background-color: #F5F5F5;
+}
+
+/* Fasetter - Overordnede fasetter */
+.EXLFacetContainer h4 {
+    color: #003366;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-indent: 0;
+    border-bottom-color: #CCCCCC;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-top-color: #CCCCCC;
+    border-top-style: solid;
+    border-top-width: 2px;
+    padding-bottom: 0.5em;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 0.5em;
+    background-color: #F5F5F5;
+    
+}
+
+/* Fasetter - Vis flere/Show more - Bold + høyrejustert */
+.EXLFacetContainer ol li.EXLFacetsDisplayMore {
+	text-align: right;
+	font-weight: bold;
+	color:#003366;
+	position: relative;
+	left: 6em;
+}
+
+/* Bakgrunnsfarge slider årstall hover */
+.EXLSliderRefine a, .EXLSliderRefine a:hover {
+	color: #ffffff;
+}
+
+
+/* FJERNING AV FASETTER */
+
+/* Følg denne oppskriften
+.EXLFacetContainer.[NAVN PÅ FASETT] {
+display: none;
+
+} */
+
+.EXLFacetContainer.facet_uio_class {
+    display: none;
+}
+
+.EXLFacetContainer.facet_instrument {
+    display: none;
+}
+
+.EXLFacetContainer.facet_form_production {
+    display: none;
+}
+
+.EXLFacetContainer.facet_form_composition {
+    display: none;
+}
+
+.EXLFacetContainer.facet_geographical_subject_headings {
+    display: none;
+}
+
+.EXLFacetContainer.facet_nlm {
+    display: none;
+}
+
+.EXLFacetContainer.facet_agrovoc {
+    display: none;
+}
+
+.EXLFacetContainer.facet_mesh {
+    display: none;
+}
+
+.EXLFacetContainer.facet_tek_words {
+    display: none;
+}
+
+.EXLFacetContainer.facet_humord {
+	display: none;
+}
+
+.EXLFacetContainer.facet_realfag {
+  display: none;
+}
+
+.EXLFacetContainer.facet_dewey {
+  display: none;
+}
+
+.EXLFacetContainer.facet_bibliography {
+  display: none;
+}
+
+
+/* DOKUMENTPOSTER/TREFFLISTEN */
+
+/* Legger til nummerering av postene i trefflista ka */
+.EXLResultsList td.EXLResultNumber{
+	vertical-align: middle;
+	display:table-cell;
+	*display:block; w
+	idth:1%;
+	font-weight: bold} /* note the display
+hack for ie6/7 */
+
+/* Luft under trefflisteheader*/
+.EXLResultsHeader h1 {
+	margin-bottom: 1em;
+}
+	
+/* Plassering av nummerert trefflisteside */
+.EXLResultsHeader div.EXLResultsNavigation {
+	font-size: 80%;
+	margin: 0px;
+	padding: 1em 0em 1em 1em;
+	float: none; 
+	width: 20%;
+	text-align: right;
+}
+
+/* Formatering for nummerert treffliste */
+div.EXLResultsNavigation .EXLDisplayedCount {
+	width: 15px;
+	padding: 5px 7px;
+	margin-right: 0.1em;
+	border: 1px solid #CCC;
+	color: #fff;
+	background-color: #0075B0;
+	border-radius: 5px;
+	text-align: center;
+}
+
+/* Uthevet visning treffside */
+div.EXLResultsNavigation a.EXLBriefResultsPagination {
+	width: 15px;
+	padding: 5px 7px;
+	margin-right: 0.1em;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	text-align: center;
+	background-color: #f5f5f5;
+}
+
+/* Sorter etter i Bold */
+.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy span.EXLResultsSortBySelected a {
+	margin-left: 0.5em;
+	padding-right: 1em;
+	background-image: url(../images/icon_arrow_sendTo.png);
+	background-repeat: no-repeat;
+	background-position: 100% 70%;
+	color: #32322f;
+	font-weight: bold;
+}
+
+/*Fjerne Facebook-knapp */
+
+.EXLFacebookIframe {
+    display: none;		
+}
+
+/* Tittel - Større font */
+h2.EXLResultTitle{
+	font-size: 15px;
+}
+
+
+/* Forfatter - fontarge */
+.EXLResultAuthor {
+    color: #373737;
+}
+
+/* Tittel - Tidsskrift, volum, nummer - Bold skrift */
+/* .EXLResultDetails {
+	font-weight: bold;
+} */
+
+/* Status Tilgjengelig i grønt */
+.EXLResultsList em.EXLResultStatusAvailable {
+    /* color: #5ca301; Grønn for status tilgjengelig */
+    /* padding-left: 0; */
+    color: #000000:
+}
+
+/* Status Utlånt i rødt */
+.EXLResultsList em.EXLResultStatusNotAvailable {
+    color: #e54f4f;
+    background-image: none;
+    padding-left: 0;
+}
+
+/* Faner i postvisning - Bold - FJERNET 12.09.14*/
+/*
+.EXLTabsRibbon div li.EXLResultTab a {
+	font-weight: bold;
+} /*
+
+/* Faner som knapper */
+.EXLTabsRibbon div li.EXLResultTab a {
+	font-weight: bold;
+	color: #616161;
+	background-color: #f5f5f5;
+	border-radius: 5px;
+	border: solid 1px #CCC;
+	padding: 4px 7px;
+	text-decoration: none;
+}
+
+/* Faner - fjern bakgrunnsstreker */
+.EXLTabsRibbon div li.EXLResultSelectedTab {
+	border: none;
+	border-bottom: none;
+	background-image: none;
+}
+
+/* Luft ovendor popup-vindu i postvisningen */
+.EXLResultTabContainer {
+	margin-top: top: 2em;
+}
+
+/* Fjerne pil bak Vis Fulltekst fane */
+.EXLTabsRibbon div li.EXLResultTabIconPopout {
+	background-image: none;
+}
+
+/* Faner - bakgrunnsfarge ved musa over */
+.EXLTabsRibbon div li.EXLResultTab a:hover {
+	background-color: #d5d5d5;
+}
+
+/* Fjerne fanen for omtaler og tagger */
+.EXLResult .EXLReviewsTab { display:none;}
+
+/* Fjerne fanen for "Bestill kopi" */
+li.EXLResultTab.PHOTOCOPYTab.EXLResultLastTab {	display:none;}
+
+/* Fjerne fane for "Siteringer" - Fjernet pga Scopus som vi ikke har abonnement på. Saken er meldt inn til BIBSYS*/
+.EXLCitationsTab.EXLResultTab.EXLServiceConditionalTab  a {
+display:none;
+}
+
+/* Søkeknapp Fasetter */
+#exlidFacetsLightboxContainer a.EXLSubmit {
+	background-color: #003366;
+}
+
+/*  Fjerner "Vis flere versjoner" lenke på høyre side */
+.EXLResultFRBR { display: none;}
+
+/* Fjerner "Klikk på tittelen eller lenken til høyre for å se flere versjoner" i postvisning */
+.EXLResultSeeFrbrLink {	display: none;}
+
+/* Endrer farge og bakgrunn på "Flere versjoner funnet" */
+.EXLResultsList span.EXLResultVersionFound a {
+	color: #0075b0;
+	font-weight: bold;	
+}
+
+
+/* AVANSERT SØK */
+
+/* Farge søkeknapp - Avansert søk*/
+#exlidAdvancedSearchRibbon input.submit {
+    background-color: #003366;
+    background-image: none;
+}
+
+/* MIN KONTO */
+
+/* Min konto - Farge på fane */
+.EXLMyAccountRibbon div li.EXLMyAccountSelectedTab {
+	background-color: #003366;
+}
+
+/* Min konto - Bunnlinje under faner */
+
+.EXLMyAccountTabsRibbon {
+	border-bottom: 2px solid  #003366;
+}
+
+/* Min konto - Bakgrunnsfarge faner */
+
+.EXLMyAccountTabsRibbon div li.EXLMyAccountSelectedTab {
+	border: 1px solid #003366;
+	border-bottom: 2px solid #003366;
+	background-color: #003366;
+	background-image: none;
+}
+  
+/* Min konto - Lagre knapp */
+
+.EXLMyAccountMainContainer form input.submit {
+	background-color: #003366;
+	background-image: none;
+}
+
+/* Min konto - fjerne endre detaljer */
+.EXLMyAccountMainContainer div.EXLMyAccountEditLink {
+display: none;
+}
+
+
+/* SEND TIL */
+
+/* Send til - EndNote-knapp */
+
+.EXLPopupImportCitationContainer div.EXLPopupImportCitationButtonLink span input {
+	background-color: #003366;
+}
+
+/* Brukerprofil - Valg av interesseområder */
+
+.EXLLighboxSubmitButton span .EXLSubmit {
+	background-color: #003366;
+}
+
+
+
+
+/* 
+----------------------------------
+GENERAL OVERRIDES BY SKALAR
+----------------------------------
+*/
+.EXLFooterTile {
+  display: block;
+  width: auto;
+  box-sizing: border-box;
+  margin: 20px 30px;
+  color: #606164;
+  background: none;
+  background-image: none;
+  clear: both;
+}
+.EXLFooterTile p {
+  
+}
+.EXLFooterTile ul {
+  padding-left: 0;
+}
+.EXLFooterTile li {
+  text-indent: 0;
+  margin-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.EXLFooterTile li:first-of-type {
+  padding-left: 0;
+}
+.EXLFooterTile li.EXLFooterFirstLink img {
+  max-width: 78px;
+  margin-bottom: 5px;
+}
+.EXLFooterTile .EXLFooterLinksList2 li {
+  border-right: none;
+}
+#exlidHeaderTile {
+  background-color: #f1f0ed;
+}
+#exlidUserAreaRibbon {
+  background-image: none;
+  margin-top: 51px;
+  margin-right: 46px;
+}
+#exlidUserAreaRibbon li {
+  background-image: none;
+}
+#exlidUserAreaRibbon li a {
+  background-image: none;
+  text-decoration: none;
+  font-size: 14px;
+  color: #00467F;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: grayscale;
+}
+#exlidUserAreaRibbon li span {
+  background-image: none;
+  text-decoration: none;
+  font-size: 14px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: grayscale;
+}
+#exlidUserAreaRibbon li span.EXLUserAreaStart {
+  background-color: transparent;
+  background-image: none;
+}
+#exlidMainMenuTile {
+  width: 100%;
+  padding: 3px 0 10px;
+  background-color: #F1F0ED;
+  margin-bottom: 20px;
+  xborder-bottom: 1px solid #E7E7E7;
+  border-bottom: 6px solid #C6DCE7;
+}
+#exlidMainMenuRibbon {
+  float: left;
+  margin-left: 25px;
+}
+#exlidMainMenuRibbon li a {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Open Sans', Arial, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 8px;
+  display: block;
+  margin-top: 2px;
+  color: #146BAD;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: grayscale;
+}
+#exlidMainMenuRibbon li a:hover {
+  color: #8A2333;
+}
+#exlidMainMenuRibbon li span {
+  padding: 0;
+}
+#exlidMainMenuTile div.EXLLanguagesContainer {
+  background: transparent;
+  margin-top: -2px;
+  padding: 11px 58px 9px 20px;
+  margin-right: 0px;
+  margin-bottom: -9px;
+  text-transform: uppercase;
+}
+#exlidMainMenuTile div.EXLLanguagesContainer span.EXLLanguagesLabel {
+  width: 46%;
+  font-weight: normal;
+}
+#exlidMainMenuTile div.EXLLanguagesContainer {
+  width: 250px;
+}
+#exlidMainMenuTile div.EXLLanguagesContainer li img:nth-child(1) {
+  display: block;
+  float: left;
+  margin-right: 5px;
+}
+#exlidMainMenuTile div.EXLLanguagesContainer div.EXLLanguagesMenu {
+  margin-top: -5px; 
+}
+#exlidMainMenuTile div.EXLLanguagesContainer li img:nth-child(2) {
+  display: block;
+  float: right;
+  right: 10px;
+  position: relative;
+  top: 5px;
+  margin-left: 5px;
+}
+#exlidMainMenuTile div.EXLLanguagesContainer li a {
+  padding: 5px 10px 5px 5px;
+  display: block;
+}
+#exlidHomeContainer {
+  width: auto;
+}
+#exlidHomeContainer h2 {
+  background-color: #488DC2;
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 24px;
+  padding: 5px 10px;
+  margin: 10px 0;  
+  font-weight: 600;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: grayscale;
+}
+.EXLHomeNewsContainer {
+  display: inline-block;
+}
+#exlidSearchTile {
+  background-image: none;
+  border: none;
+  padding: 0 25px;
+  width: auto;
+}
+div#exlidHomeContainer.EXLCustomLayoutContainer {
+  margin-left: 25px;
+}
+#exlidMainMenuTile div.EXLMainMenuContainer {
+  width: auto;
+}
+.EXLFooterTile ul.EXLFooterLinksList2 {
+  margin-bottom: 30px;  
+}
+#exlidHeaderContainer {
+  background-color: #F9F9F8;
+}
+.EXLSearchWrapper {
+  padding-bottom: 10px;
+  border-bottom: 6px solid #C6DCE7;
+}
+#exlidHeaderSearchLimits {
+  background-color: #F9F9F8;  
+  display: block;
+  overflow: hidden;
+  padding: 0 25px 0;
+  width: auto;
+  clear: both;
+}
+#exlidSearchRibbon {
+  width: 100%;
+  margin-bottom: 10px;
+}
+#exlidSearchRibbon input {
+  font-size: 14px;
+  padding: 10px 20px;
+  height: auto;
+  -webkit-appearance: none;
+}
+#exlidSearchTabs {
+  height: auto;
+  margin-bottom: 0px;
+  display: inline-block;
+}
+#exlidSearchTabs li {
+  border: none;
+  height: auto;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 0;
+  color: #9B9B9B;
+  font-size: 16px;
+}
+#exlidSearchTabs li a {
+  font-weight: 500;
+  font-family: 'Open Sans', Arial, sans-serif;
+  text-decoration: none;
+  color: #146BAD;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: grayscale;
+}
+#exlidSearchTabs li a:hover { 
+  color: #8A2333;
+  text-decoration: underline;
+}
+#exlidSearchTabs li.EXLSearchTabSelected {
+  background-image: none;
+  font-weight: normal;
+  color: #000;
+  border: 1px solid #488DC2;
+  border-bottom: 1px solid #fff;
+  background-color: #036;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 0;
+  border-radius: 5px 5px 0 0;
+  margin-bottom: -3px;
+  height: auto;
+}
+#exlidSearchRibbon div.EXLSearchTabsContainer {
+  height: auto;
+  position: relative;
+  z-index: 100;
+  margin-bottom: 0px;
+  display: block;
+}
+#exlidSearchRibbon div.EXLSearchFieldRibbon {
+  height: auto;
+  float: none;
+  display: inline-block;
+  overflow: hidden;
+  border: 1px solid #488DC2;
+}
+.EXLSearchFieldRibbonBrowseSearchLink {
+    display: none;
+}
+.EXLSearchFieldRibbonFormFields {
+  height: auto;
+  width: 88%;
+}
+.EXLSearchFieldRibbonFormSubmitSearch {
+  width: 12%;
+}
+#exlidSearchRibbon input.submit {
+  height: auto;
+  padding: 10px 20px;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+.EXLClearSimpleSearchBoxButtonClose {
+  margin-top: 6px;
+}
+.EXLSearchFieldRibbonAdvancedSearchLink {
+  float: left;
+}
+.EXLSearchFieldRibbonAdvancedSearchLink a.EXLSearchFieldRibbonAdvancedTwoLinks {
+  margin-top: 23px;
+  margin-left: 20px;
+}
+#exlidHeaderSearchLimits select {
+  font-size: 14px;
+  background: #FFF;
+}
+#notifierDiv {
+  margin: 20px 38px 20px;
+  border: none;
+  padding-left: 0;
+  border-top: 1px solid #8FB9D0; 
+  border-bottom: 1px solid #8FB9D0;  
+  color: #488DC2;
+}
+#notifierDiv p {
+  line-height: 20px;
+  font-size: 13px;
+}
+#exlidHeaderSearchLimits {
+  border-bottom: none;
+}
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 {
+  width: 46%;
+  float: left;
+  padding-left: 1%;
+  padding-right: 3%;
+}
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 p {
+  font-size: 13px;
+  line-height: 20px;
+  color: #444;
+}
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock2 {
+  width: 46%;
+  float: left;
+  margin-left: 0;
+  padding-left: 2%;
+  padding-right: 2%;  
+}
+.EXLSearchForm {
+  display: inline-block;
+  width: 100%;
+}
+#exlidMainMenuTile div.EXLLanguagesContainer ul.EXLLanguageMenuShow li:nth-child(2),
+#exlidMainMenuTile div.EXLLanguagesContainer ul.EXLLanguageMenuShow li:nth-child(4) {
+  display: none;
+}
+#exlidSearchRibbon fieldset {
+  width: 80%;
+}
+
+/* 
+----------------------------------
+SEARCH RESULT OVERRIDES BY SKALAR
+----------------------------------
+*/
+.EXLResultsContainer div.EXLResultsTile {
+  background-color: transparent;
+  border: none;
+}
+.EXLResultsList {
+  border-top: 1px solid #888;  
+  margin-top: 20px;
+}
+.EXLResultsList td.EXLResultNumber {
+  vertical-align: top;
+  font-size: 14px;
+}
+.EXLResultsList td {
+  padding: 20px 5px;
+  border-bottom: 1px solid #888;
+}
+.EXLResultsList td.EXLThumbnail {
+  padding: 20px 5px;  
+}
+.EXLResultsList td.EXLSummary {
+  padding: 20px 5px 30px;    
+}
+.EXLResultsList td.EXLMyShelfStar {
+  padding: 20px 5px;      
+}
+h2.EXLResultTitle {
+  padding-top: 0;
+  font-size: 18px;
+  line-height: 25px;
+  padding-bottom: 10px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: grayscale;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+.searchword {
+  background-color: #e3f4fd;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.EXLResultsList div.EXLSummaryContainer {
+  display: inline-block;
+}
+.EXLResultsList div.EXLSummaryContainer div.EXLSummaryFields {
+  float: none;
+  width: auto;
+}
+.EXLResultsHeader {
+  background-color: #fff;
+  padding: 10px;
+  width: auto;
+  height: auto;
+}
+.EXLResultsContainer {
+  margin-left: 25px;
+}
+.EXLFacetContainer {
+  padding: 0;
+  background-color: transparent;
+  border-right: 1px solid #888;
+}
+.EXLFacetContainer h3, .EXLFacetContainer h1 {
+  border-bottom: none;
+  background-color: transparent;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding: 10px 0 5px;
+  border-top: 1px solid #888;
+}
+.EXLFacetContainer h4 {
+  padding-left: 0;
+  background-color: transparent;
+  border: none;
+  border-top: 1px solid #CCC;
+  margin-right: 15px;
+  padding-top: 15px;
+}
+.EXLFacetContainer ol {
+  padding-left: 0;
+  padding-bottom: 20px;
+}
+.EXLFacetContainer ol li {
+  margin-bottom: 5px;
+  margin-right: 5px;
+  font-size: 13px;
+  line-height: 18px;
+}
+.EXLResultsSortBySelected {
+  background: #F1F0ED;
+  padding: 5px;
+  margin-left: 5px;
+}
+.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy ul {
+  background-color: #F1F0ED;
+  padding: 10px;
+  border: 1px solid #E7E7E7;
+  width: 8em;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
+}
+.EXLFacetTile div.EXLFacetList {
+  margin-bottom: 20px;
+}
+.EXLRefinementRibbonWithExclude {
+  background-color: #fff;
+  display: block;
+  padding: 10px;
+  overflow: hidden;
+  width: auto;
+}
+.EXLRefinementRibbonWithExclude div.EXLRefinementsList {
+  width: auto;
+}
+.EXLRefinementRibbonWithExclude span.EXLRemoveRefinement {
+  background-color: #F1F0ED;
+}
+.EXLResultsHeader h1 {
+  padding-left: 0;
+}
+.EXLRefinementRibbonWithExclude span.EXLRefinementsListTitle {
+  margin-left: 0;
+}
+.EXLResultsHeader div.EXLResultsNavigation {
+  padding-left: 0;
+  padding-top: 35px;
+  text-align: left;
+  width: 50%;
+}
+.EXLFacetContainer div.EXLFacetActionsV2 {
+  background: #FFF;
+  padding: 5px;
+}
+.EXLDateRangeText {
+  margin-right: 20px;
+}
+.EXLFacetContainer ol li.EXLFacetsDisplayMore {
+  left: 0;
+  text-align: left;
+}
+.EXLFacetContainer ol li.EXLFacetsDisplayMore a {
+  background: #488DC2;
+  color: #FFF;
+  padding: 5px 10px;
+  font-weight: normal;
+}
+.EXLFacetContainer ol li.EXLFacetsDisplayMore a img {
+  display: none;
+} 
+.EXLFacetContainer ol li.EXLFacetsDisplayMore a:hover {
+  color: #fff;
+  background-color: #A94D1F;
+  text-decoration: none;
+  background-image: none;
+}
+.EXLTabsRibbon div li.EXLResultTab {
+  height: auto;
+  padding: 0;
+}
+.EXLTabsRibbon div li.EXLResultSelectedTab {
+  margin-left: 0;
+  margin-right: 2px;
+}
+.EXLTabsRibbon div li.EXLResultTab a {
+  background: #488DC2;
+  color: #FFF;
+  padding: 5px 10px;
+  border-radius: 0;
+  box-shadow: none;
+  font-weight: normal;
+  border: none;
+  display: block;
+}
+.EXLTabsRibbon div li.EXLResultSelectedTab a {
+  color: #fff;
+  background-color: #A94D1F;
+}
+.EXLTabsRibbon div li.EXLResultTab a:hover {
+  color: #fff;
+  background-color: #A94D1F;
+}
+.EXLTabsRibbon div ul {
+  margin-top: 10px;
+}
+.EXLResultAvailability {
+  margin-top: 10px;
+  clear: both;
+  display: inline-block;
+  float: left;
+}
+.EXLResultsList td.EXLThumbnail span.EXLThumbnailCaption {
+  padding: 5px 5px;
+  margin-top: 5px;
+  background-color: transparent;
+  border: none;
+}
+div.EXLResultsNavigation a.EXLBriefResultsPagination {
+  border-radius: 0;
+  border: none;
+}
+div.EXLResultsNavigation a.EXLBriefResultsPagination:hover, div.EXLResultsNavigation a.EXLBriefResultsPagination:hover a {
+  color: #fff;
+  background-color: #A94D1F;
+  text-decoration: none;
+}
+div.EXLResultsNavigation .EXLDisplayedCount {
+  border-radius: 0;
+  border: none;
+}
+.EXLResultsList h3 {
+  float: left;
+  padding-right: 5px;
+  width: 100%;
+}
+.EXLResultsList h3.EXLResultFourthLine {
+  float: none;
+  clear: both;
+}
+.EXLTabsRibbon {
+  height: 35px;
+}
+.EXLTabContent {
+  background-color: #fff;
+}
+#exlidFacetsLightboxContainer a.EXLSubmit {
+  background: #488DC2;
+  color: #FFF;
+  padding: 5px 10px;
+  border: none;
+  font-size: 14px;
+  height: auto;
+}
+#exlidFacetsLightboxContainer input.EXLReset {
+  padding: 5px 10px;
+  border: none;
+  font-size: 14px;
+  height: auto;
+}
+body.EXLFullView div.EXLResultsContainer {
+  width: auto;
+  margin-right: 20px;
+}
+body.EXLFullView div.EXLBackToResults, .EXLBackToResults, .EXLResultsHeader div.EXLResultsNavigation {
+  font-size: 14px;
+}
+.EXLResultsHeader div.EXLResultsNavigation a img {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+body.EXLFullView div.EXLResultsList h1.EXLResultTitle {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.EXLResultDetails {
+  display: block;
+  clear: both;
+  margin: 5px 0;
+  overflow: hidden;
+  float: left;
+  width: 100%;
+}
+.EXLResultsList p.EXLResultSnippet {
+  clear: left;
+  margin: 5px 0;
+}
+
+table.itemsListTable .title {
+  font-style: normal;
+  font-size: 13px;
+}
+.folder_details .itemsList {
+  overflow-x: hidden;
+}
+.folder_details .itemsListTH th {
+  font-size: 13px;
+  font-style: normal;
+  padding: 5px 5px 5px 0;
+}
+.folder_details .itemsListTH th.itemsList_left {
+  padding-left: 10px;
+}
+.folder_details .itemsListTable td {
+  padding: 5px 5px 5px 0;
+  font-size: 13px;
+}
+table.itemsListTable td.title {
+  font-style: normal;
+  font-weight: normal;
+}
+.folder_details h5 {
+  text-indent: 0;
+  margin-left: 15px;
+  margin-top: 0;
+  line-height: 22px;
+  font-size: 16px;
+}
+.folder_details li {
+  font-size: 13px;
+}
+.folder_details .ulTd {
+  padding: 0 5px 10px;
+}
+.folder_details select {
+  font-size: 13px;
+  margin-top: 0;
+}
+span.buttonGo {
+  border: none;
+}
+.buttonGo a {
+  background: #488DC2;
+  color: #FFF;
+  padding: 3px 10px;
+  border-radius: 0;
+  box-shadow: none;
+  font-weight: normal;
+  border: none;
+  display: block;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+}
+.buttonGo a:hover {
+  background-color: #8A2333;
+  text-decoration: none;
+}
+.folder_details .itemsListTH {
+  box-shadow: 0px 5px 7px -5px rgba(0, 0, 0, 0.6);
+  position: relative;
+  background-color: transparent;
+  width: 100% !important;
+}
+.guestNote, .folders_new li a {
+  font-size: 13px;
+}
+.EXLMyAccountContainer {
+  background-color: transparent;
+}
+.EXLMyAccountContainer > table:first-of-type {
+  box-shadow: 0px 7px 10px -5px rgba(0, 0, 0, 0.6);
+  padding-bottom: 15px;
+  position: relative;
+  z-index: 200;
+  background: rgba(0, 0, 0, 0);
+  margin-left: 23px;
+  width: auto;
+  margin-right: 20px;
+}
+.folder_details table.folderName {
+  background-color: transparent;
+  border: none;
+  height: auto;
+}
+.folder_details .buttonsUl {
+  padding-top: 0;
+}
+.foldersOverflow {
+  padding-left: 0;
+}
+.folders_new li ul li {
+  margin-bottom: 5px;
+}
+.folder_details .itemsListTable {
+  width: 100% !important;
+}
+.folder_details .itemsListTable .itemsList_left, .folder_details .itemsList_left {
+  border-left: none;
+  padding-left: 10px;
+}
+.folder_details .tableBorder {
+  background-color: transparent;
+}
+.folders_new li {
+  padding-left: 10px;
+}
+
+.EXLMyAccountTabsRibbon div li.EXLMyAccountTab, .EXLMyAccountTabsRibbon div li.EXLMyAccountTab a {
+  background-color: #488DC2;
+  border-color: #488DC2;
+  color: #fff;
+  text-decoration: none;
+}
+.EXLMyAccountTabsRibbon div li.EXLMyAccountTab:hover, .EXLMyAccountTabsRibbon div li.EXLMyAccountTab:hover a:hover, .EXLMyAccountTabsRibbon div li.EXLMyAccountTab:hover a {
+  background-color: #A94D1F;
+  border-color: #A94D1F;
+  color: #fff;
+  text-decoration: none;
+}
+.EXLMyAccountTabsRibbon div li.EXLMyAccountSelectedTab, .EXLMyAccountTabsRibbon div li.EXLMyAccountSelectedTab a {
+  background-color: #A94D1F;
+  border-color: #A94D1F;
+  text-decoration: none;
+  color: #fff;
+  font-weight: normal;
+}
+.EXLMyAccountTabsRibbon div li.EXLMyAccountSelectedTab:hover, .EXLMyAccountTabsRibbon div li.EXLMyAccountSelectedTab a:hover {
+  background-color: #A94D1F;
+  border-color: #A94D1F;
+  text-decoration: none;
+  color: #fff;
+  font-weight: normal;
+}
+.EXLMyAccountTabsRibbon {
+  border-bottom: 1px solid #8FB9D0;
+}
+.EXLMyAccountTabsRibbon div ul {
+  margin-left: 31px;
+}
+.folder_details label.offstage {
+  left: -103em;
+}
+#exlidHeaderSystemFeedback, .folder_details .selected td, .folders_new li a.selectedFolder {
+  background-color: #DCF1FE;
+}
+#exlidHeaderSystemFeedback strong {
+  background-image: none;
+}
+body.EXLFullView div.EXLResultsContainer div.EXLResultsTile {
+  background-color: transparent;
+}
+body.EXLFullView div.EXLResultsFooter {
+  background-color: transparent;  
+}
+body.EXLFullView .EXLResultsContainer {
+  margin-left: 13px;
+  margin-right: 7px;
+}
+.EXLMyAccountMainContainer {
+  border: none;
+  background-color: transparent;
+  font-size: inherit;
+  margin-top: 10px;
+}
+.EXLMyAccountMainContainer div.EXLMyAccountMainHeader {
+  line-height: 22px;
+  font-size: 16px;
+  padding-bottom: 10px;
+  height: auto;
+  overflow: hidden;
+  background-color: transparent;
+}
+.EXLMyAccountMainContainer div.EXLMyAccountMainHeader div.EXLMyAccountMainHeaderTitle {
+  padding-left: 0;
+  padding-top: 0;
+}
+.EXLMyAccountMainContainer table {
+  width: 100%;
+}
+.EXLMyAccountMainContainer table th {
+  background-color: transparent;
+  padding: 5px;
+  font-size: 13px;
+}
+.EXLMyAccountMainContainer table td {
+  border-bottom: #E0E2E5 1px solid;
+  padding: 5px;
+  background-color: #fff;
+  font-size: 13px;
+}
+.EXLMyAccountMainContainer table.EXLMyAccountForm td {
+  background-color: transparent;
+}
+
+.EXLMyAccountMainContainer table thead td {
+  border-bottom: none;
+  padding: 5px;
+  background-color: transparent;
+  font-size: 13px;
+}
+.EXLMyAccountMainHeaderTitle div.EXLMyAccountMainHeaderContent span.EXLMyAccountMainHeaderContentSelected {
+  background-color: transparent;
+}
+.EXLLoansRenewButton, #renew_selecte_loans_button {
+  background: #488DC2;
+  padding: 4px 8px;
+  color: #FFF;
+  font-weight: normal;
+  display: inline-block;
+}
+.EXLLoansRenewButton, #renew_selecte_loans_button b {
+  font-weight: normal;
+}
+.EXLMyAccountMainMenuTile {
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.EXLMyAccountMainContainer table.EXLMyAccountForm {
+  margin-left: 0;
+}
+.EXLMyAccountMainContainer div.EXLMyPersonalSettings {
+  padding-left: 0;
+}
+.EXLMyAccountContainer .EXLMyAccountMainMenuTileMyQueries {
+  width: 15em;
+}
+
+
+
+/* 
+----------------------------------
+FASETT OVERRIDES BY SKALAR
+----------------------------------
+*/
+/* Denne classen gjør at alle li-elementer i hver fasett-boks blir synlig */
+.EXLFacetContainer ol li.EXLAdditionalFacet {
+  display: list-item;
+}
+/* Denne classen bestemmer hvor mange som skal være synlig. I dette tilfelle vil fem vises, dvs. vi skjuler fra 4 og oppver. Bare å leke med uttrykket i parents for å endre antallet */
+.EXLFacetContainer ol li:nth-child(1n+4) {
+  display: none;
+}
+/* Denne setter siste element, dvs. "Flere valg"-knappen til synlig */
+.EXLFacetContainer ol li:last-of-type {
+  display: inline-block;
+}
+
+/* Hvis du vil bestemme antall synlige li-elementer i en spesifikk fasett-boks, så lager du stil som dette hvor du legger til det unike class-navnet, f.eks. "facet_creator" for "Kilde" */
+.EXLFacetContainer.facet_library ol li:nth-child(1n+6) {
+  display: none;
+}
+
+/* Hvis du gjør som over her, så må denne også legges inn, for at "Flere valg"-knappen skal bli synlig i denne listen */
+.EXLFacetContainer.facet_library ol li:last-of-type {
+  display: inline-block;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { 
+  #exlidMainMenuTile div.EXLLanguagesContainer {
+    float: left;
+    margin-left: 15px;
+    margin: 10px 17px 0;
+  }
+  .EXLResultsHeader div.EXLResultsNumbers {
+    width: 100%;
+  }
+  .EXLResultsHeader h1 {
+    width: 100%;
+  }
+  .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy {
+    width: 100%;
+    clear: both;
+    float: left;
+  }
+  .EXLResultsHeader div.EXLResultsNavigation {
+    display: inline-block;
+    margin-top: 25px;
+  }
+}
+@media only screen and (max-width: 1230px) {  
+  .folders_new {
+    width: 176px;
+  }
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  #exlidUserAreaTile {
+    position: relative;
+    width: 100%;
+    background: #F1F0ED;
+    display: inline-block;
+    float: none;
+    overflow: hidden;
+  }
+  #exlidUserAreaTile ul {
+    margin-top: 10px;
+    height: auto;
+    margin-right: 0px;
+    margin-left: 35px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #8FB9D0;
+    width: 90%;
+  }
+  #exlidUserAreaTile ul li.EXLUserName span.EXLUserAreaStart {
+    padding-left: 0;
+    height: auto;
+    width: auto;
+  }
+  #exlidUserAreaTile ul li.EXLUserName span.EXLUserNameDisplay {
+    padding-left: 0;
+  }
+}
+
+
+

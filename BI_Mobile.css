@@ -1,0 +1,173 @@
+/* CSS - MOBIL */
+/* I denne CSS'en ligger formateringsinnstillinger for Handelshøyskolen BI sin Primo-installasjon. */
+/* Utarbeidet av: Ole Andreas Solberg, ole.a.solberg@bi.no */
+/* Startdato: 2013-05-29. */
+/* Sist oppdatert: 2014-11-25 */
+
+/* Bakgrunnsfarge søkeknapp */
+@media screen and (max-width: 500px) {
+	#exlidSearchRibbon input.submit {
+	background-color: #003366;
+	}
+}
+
+/* Toppbanner - Bakgrunnsbilde */
+#exlidHeaderTile img {
+	width: auto;
+	height: auto;
+	/* background-image: url(http://bibsys-primo.hosted.exlibrisgroup.com/primo_library/libweb/images/BI_no_EN_m_back);*/
+}
+
+/* Toppbanner - Størrelse */
+#exlidHeaderTile {
+	width: auto;
+	height: auto;
+  width: 100%;
+  padding: 0;
+}
+
+
+
+/* 
+----------------------------------
+GENERAL OVERRIDES BY SKALAR
+----------------------------------
+*/
+#exlidUserAreaTile {
+  position: relative;
+  float: left;
+}
+#exlidUserAreaRibbon {
+  margin-right: 10px;
+}
+#exlidSearchRibbon input.submit {
+  height: auto;
+  padding: 10px 20px;
+  -webkit-appearance: none;
+  border-radius: 0;
+  background-color: #0075B0;
+  background-image: none;
+  background-repeat: repeat-x;
+  margin: 0em;
+  width: 100%;
+  color: #FFF;
+  font-weight: normal;
+}
+.EXLSearchFieldRibbonFormFields {
+  height: auto;
+}
+.EXLSearchFieldRibbonFormSearchFor {
+  background-color: #fff;
+}
+.EXLSearchFieldRibbonFormSearchClear {
+  display: none;
+}
+#exlidSearchRibbon input.EXLSearchFieldMaximized {
+  padding: 17px 10px;
+}
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 {
+  width: auto;
+  padding: 0 20px 0 0;
+}
+.EXLResultsContainer {
+  margin: 0;
+}
+.EXLResultsList {
+  margin-top: 0;
+}
+.EXLResultsList td.EXLThumbnail {
+  width: auto;
+}
+h2.EXLResultTitle {
+  font-size: 15px;
+  line-height: 20px;
+}
+.EXLResultsHeader h1 {
+  padding-left: 0;
+}
+body.EXLFullView div.EXLTabsRibbon div li.EXLResultTab {
+  height: auto;
+}
+.EXLTabsRibbon div li.EXLResultTab a {
+  font-size: 12px;
+  padding: 3px 4px;
+}
+.EXLTabsRibbon div li.EXLResultSelectedTab {
+  margin-left: 0;
+  margin-right: 2px;
+}
+#exlidMainMenuTile div.EXLLanguagesContainer ul.EXLLanguageMenuShow li:nth-child(2), 
+#exlidMainMenuTile div.EXLLanguagesContainer ul.EXLLanguageMenuShow li:nth-child(4) {
+  display: none;
+}
+#exlidUserAreaRibbon li select {
+  text-transform: uppercase;
+}
+#exlidUserAreaRibbon li select {
+  font-size: 12px !important;
+}
+#exlidUserAreaRibbon li:first-of-type span {
+  padding-left: 0;
+}
+#exlidUserAreaTile ul {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+#exlidUserAreaRibbon li.EXLUserName {
+  width: 98%;
+  padding: 0;
+  display: inline-block;
+  border-right: none;
+  border-bottom: 1px solid #dadada;
+}
+.EXLSearchFieldRibbonFormSubmitSearch {
+  width: auto;
+}
+#exlidSearchTile {
+  padding: 0 18px;
+}
+#notifierDiv {
+  margin: 20px 18px 20px;
+}
+div#exlidHomeContainer.EXLCustomLayoutContainer {
+  margin-left: 20px;
+}
+#EXLFacetsMobile select {
+  -webkit-appearance: none;
+  border: none;
+  border-top: 1px solid #488DC2;
+  padding: 5px 12px;
+  color: #00467F;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: grayscale;
+  border-radius: 0;
+  margin-top: 1px;
+  margin-left: -2px;
+  background-color: #f2f2f2;
+}
+#EXLFacetsMobile:after {
+  content: "▼";
+  position: absolute;
+  right: 5px;
+  bottom: 7px;
+  color: #00467F;
+}
+.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy {
+  float: left;  
+}
+.EXLResultsHeader div.EXLResultsNavigation {
+  padding-top: 15px;
+}
+.EXLResultsHeader {
+  margin-bottom: 0;
+}
+.EXLRefinementRibbonWithExclude span.EXLRemoveRefinement {
+  margin-left: 0;
+}
+body.EXLFullView div.EXLTabsRibbon {
+  height: 43px;
+}
+.MyAccount_Loans_4 {
+  display: table-cell;
+}
