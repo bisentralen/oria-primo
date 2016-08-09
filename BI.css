@@ -26,7 +26,45 @@ a:link, a:visited {
 a:hover, a:active, a:focus {
   color: #8A2333;
 }
-        
+
+/* SITERINGER - SITERT AV */
+ .citeBtn a:link, .citeBtn a:visited {
+    background: #488DC2;
+    color: #FFF;
+    padding: 5px 10px;
+    border-radius: 0;
+    box-shadow: none;
+    font-weight: normal;
+    border: none;
+    display: block;
+} 
+
+.citeBtn a:hover, .citeBtn a:active {
+    color: #fff;
+    background-color: #A94D1F;
+}
+
+ cite.EXLCitationTrailsIndicationContainer {
+    display: flex;
+    float: left;
+    margin-left: 0em;
+    margin-top: 21px;
+    /* margin-top: 21px; 
+    padding: 21px 0.5px; */
+} 
+
+.EXLResultsList cite a {
+    /* padding: 0em 0.5em 0em 0.1em; */
+    line-height: 120%;
+}
+
+/* Fjernet Hent-fanen fra BIBSYS-oppdatering juni 2016 */
+li.EXLMoreTab.EXLResultTab {
+  display: none;
+}
+
+
+
 /* FONTER, BAKGRUNN, OVERORDNET FORMATERING
 
 /* HEADER */
@@ -42,14 +80,14 @@ a:hover, a:active, a:focus {
 #exlidHomeContainer h4{ font-size:100%;color:#00467F;}
 
 
-/* Slette? 11.05.16 FHJ */
+/* Slette? Forårsaker https-feil. 11.05.16 FHJ */
 /*#exlidHomeContainer div.EXLContentBlock3 div.EXLHomeBannerContainer1 {
     background-image: url("https://www.bibsys.no/files/out/discovery/Primo_UI_files/BI/images/banner_home_chat.png");
     display:none;
     } */
 
 
-/* Slette? 11.05.16 FHJ */
+/* Slette? Forårsaker https-feil. 11.05.16 FHJ */
 /* Fjerne chatboks fra venstre forside */
 /*#exlidHomeContainer div.EXLContentBlock3 div.EXLHomeBannerContainer2 {
     background-image: url("https://www.bibsys.no/files/out/discovery/Primo_UI_files/BI/images/bg_strip_home_banners5.png");
@@ -57,13 +95,13 @@ a:hover, a:active, a:focus {
     }*/
 
 
-/* Slette? 11.05.16 FHJ */
+/* Slette? Forårsaker https-feil. 11.05.16 FHJ */
 /* Fjerne boks venstre side */
 /*#exlidHomeContainer div.EXLContentBlock4 div.EXLHomeBannerContainer1 {
     background-image: url("https://www.bibsys.no/files/out/discovery/Primo_UI_files/BI/images/banner_home_twitter.png");    
     }*/
 
-/* Slette? 11.05.16 FHJ */
+/* Slette? Forårsaker https-feil. 11.05.16 FHJ */
 /*#exlidHomeContainer div.EXLContentBlock4 div.EXLHomeBannerContainer2 {
     background-image: url("https://www.bibsys.no/files/out/discovery/Primo_UI_files/BI/images/bg_strip_home_banners5.png");
     }*/   
