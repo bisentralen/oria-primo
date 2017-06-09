@@ -1,0 +1,29 @@
+<!-- <a href="search.do?vid=BI" title="Library home page"><img src="../uploaded_files/BI/BI_no_NO.png" alt="logo"/></a> -->
+<a href="search.do?vid=BI" title="Library home page"><img src="../uploaded_files/BI/BI_no_NO_beta_100px_test.gif" alt="logo"/></a>
+
+<!-- <img STYLE="position:absolute; TOP:0px; LEFT:170px; WIDTH:50px; HEIGHT:50px" -->
+
+<!--- Ikke fjern/gjør endringer i linjen nedenfor. Den er nødvendig for at systemet skal fungere etter hensikten -->
+<script type="text/javascript" src="../uploaded_files/INST_MASTER/bibsys.js"></script>
+
+<!-- Script som endrer Language/Giella til Language-->
+<script type="text/javascript">
+// This script will change the text of <span class="EXLLanguagesLabel">Language/Giella.</span> to Lanuage:
+// Eirik (dot) Hanssen (at) hioa (dot) no
+addHiOAEvent(window, 'load', function(){ changeLanguageLabel() });
+function addHiOAEvent(element, event, fn) {
+    if (element.addEventListener)
+        element.addEventListener(event, fn, false);
+    else if (element.attachEvent)
+        element.attachEvent('on' + event, fn);
+}
+
+var changeLanguageLabel = function () {
+        var langlabels = document.getElementsByClassName('EXLLanguagesLabel');
+        var langlabeltext = langlabels[0].textContent;
+        if(langlabeltext.search("Giella")) {
+//              alert("Removing Giella");
+                langlabels[0].textContent = "Language:";
+        }
+};
+</script>

@@ -1,0 +1,57 @@
+
+<a href="http://www.bi.edu/library/" title="Library home page"><img src="../uploaded_files/BI/BI_no_EN_beta_100px_test.gif" alt="logo"/></a>
+
+<!--- Ikke fjern/gjør endringer i linjen nedenfor. Den er nødvendig for at systemet skal fungere etter hensikten -->
+<script type="text/javascript" src="../uploaded_files/INST_MASTER/bibsys.js"></script>
+
+<!-- Script som endrer Language/Giella til Language-->
+<!-- <script type="text/javascript">
+// This script will change the text of <span class="EXLLanguagesLabel">Language/Giella.</span> to Lanuage:
+// Eirik (dot) Hanssen (at) hioa (dot) no
+addHiOAEvent(window, 'load', function(){ changeLanguageLabel() });
+function addHiOAEvent(element, event, fn) {
+    if (element.addEventListener)
+        element.addEventListener(event, fn, false);
+    else if (element.attachEvent)
+        element.attachEvent('on' + event, fn);
+}
+
+var changeLanguageLabel = function () {
+        var langlabels = document.getElementsByClassName('EXLLanguagesLabel');
+        var langlabeltext = langlabels[0].textContent;
+        if(langlabeltext.search("Giella")) {
+//              alert("Removing Giella");
+                langlabels[0].textContent = "Language:";
+        }
+};
+</script> -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300" rel="stylesheet" type="text/css" />
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  var href = location.href;
+  var start = href.indexOf("vid");
+  var slutt = href.indexOf("&",start);
+  if (start!=-1){
+  if(slutt!=-1){
+  var vid = href.substring(start+4,slutt);
+  }else{
+    var vid = href.substring(start+4);
+  }
+  }else {
+  var vid="";
+  }
+  var url = href.substring(0,href.indexOf("?"));
+  url = url + "?vid=" + vid;
+  var title = 'oria.no - ' + vid;
+  
+  ga('create', 'UA-17221629-3', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('set', 'location', url);
+  ga('set', 'title', title);
+  ga('send', 'pageview');
+
+</script>
